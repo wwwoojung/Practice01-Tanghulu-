@@ -1,0 +1,412 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec {
+    padding: 120px 0;
+}
+
+.title {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto 32px auto;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+
+    line-height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header.on {
+    background: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.2s;
+}
+
+.header .header_wrap {
+    padding: 0 120px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .gnb>ul {
+    display: flex;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+    padding: 0 24px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.header.on .gnb>ul>li>a {
+    color: #0333;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li .sub {
+    position: absolute;
+    top: 10 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    width: 150px;
+    line-height: 40px;
+    border: 4px solid #ddd;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+
+.header .gnb>ul>li:hover .sub {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .gnb>ul>li .sub li~li {
+    border-top: 1px solid #ddd;
+}
+
+.header .header_wrap .utils a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 4px;
+}
+
+.header.on .header_wrap .utils a {
+    color: #333;
+}
+
+.main_visual .visual_slide .itm {
+    position: relative;
+    height: 100vh;
+}
+
+.main_visual .visual_slide .itm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.3;
+}
+
+.main_visual .visual_slide .itm01 {
+    background: url(../images/vi_01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .visual_slide .itm02 {
+    background: url(../images/vi_02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .visual_slide .itm03 {
+    background: url(../images/vi_03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .visual_slide .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1200px;
+    width: 100%;
+}
+
+.main_visual .visual_slide .slogan strong {
+    display: block;
+    margin: 0 0 22px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+}
+
+.main_visual .visual_slide .slogan p {
+    font-size: 18px;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+    line-height: 22px;
+}
+
+.main_visual .visual_slide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.main_visual .visual_slide .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background: #fff;
+    margin: 0 10px 0 0;
+    border-radius: 2px;
+}
+
+.main_visual .visual_slide .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #f00;
+}
+
+.main_visual .visual_slide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.main_visual .visual_slide .slick-dots li button {
+    display: none;
+}
+
+.main_franchise .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.main_franchise .inner>* {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 0 0 32px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main_franchise .img_box {
+    margin: 0 0 24px 0;
+}
+
+.main_franchise .itm {
+    position: relative;
+}
+
+.main_franchise .itm a::after {
+    content: "더보기";
+
+    position: absolute;
+    top: 100px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+
+    text-align: center;
+    line-height: 60px;
+
+    background: #f00;
+    color: #fff;
+
+    border-radius: 50%;
+}
+
+.main_franchise .itm h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 21px 0;
+    padding: 0 24px;
+}
+
+.main_franchise .itm p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 24px;
+}
+
+
+.main_banner {
+    position: relative;
+    background: url(../images/vi_01.jpg) no-repeat fixed center center/cover;
+}
+
+.main_banner::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.main_banner .title {
+    position: relative;
+    margin: 0 auto 0 auto;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}
+
+.main_franchise_order .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.main_franchise_order .inner>* {
+    padding: 32px 24px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.main_franchise_order .odr {
+    position: relative;
+}
+
+.main_franchise_order .odr h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 22px 0;
+}
+
+.main_franchise_order .odr p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main_franchise_order .odr::after {
+    content: attr(data-num);
+    position: absolute;
+    top: 0;
+    right: 24px;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #f00;
+    color: #fff;
+    border-radius: 50%;
+
+    transform: translate(0, -20px);
+}
+
+.main_franchise_order .odr h3::before {
+    content: attr(data-step);
+    display: block;
+    margin: 0 0 8px 0;
+    color: #f00;
+    font-size: 14px;
+}
+
+.footer {
+    padding: 80px 0;
+    background: #333;
+    color: #ddd;
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .link {
+    display: flex;
+    gap: 40px;
+    margin: 0 0 24px 0;
+}
+
+.footer .link li {
+    position: relative;
+}
+
+.footer .link li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0, -50%);
+
+    width: 1px;
+    height: 12px;
+    background: #666;
+}
+
+.footer .company {
+    margin: 0 0 24px 0;
+}
+
+.footer .company li {
+    display: inline-block;
+    margin: 0 18px 12px 0;
+    font-size: 14px;
+}
+
+.footer .customer {
+    white-space: nowrap;
+}
+
+.footer .customer .tell i {
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    font-size: 32px;
+    margin: 0 16px 0 0;
+    border-radius: 50%;
+}
+
+.footer .customer .tell span {
+    font-size: 32px;
+}
+
+.totop {
+    position: fixed;
+    right: -100px;
+    bottom: 100px;
+
+    background: transparent;
+    border: none;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.totop.on {
+    right: 100px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.totop i {
+    padding: 16px;
+    background: #f00;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
